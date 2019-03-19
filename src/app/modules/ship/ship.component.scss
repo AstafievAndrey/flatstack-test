@@ -1,0 +1,9 @@
+@import '../../../styles.scss';
+
+.ship {
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: $border-radius;
+    background: $white;
+    padding: 5px;
+}
