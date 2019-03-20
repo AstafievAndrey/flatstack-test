@@ -1,0 +1,19 @@
+<div style="width: 400px;">
+  <div class="select">
+    <input 
+      class="search-input" type="text"
+      #inp
+      (focus)="focus = true"
+      (focusout)="focus = false">
+    <div class="arrow" 
+        (click)="setFocus()"
+        [ngClass]="{'up': focus}">
+        <i></i>
+    </div>
+  </div>
+  <div class="select-res-container" *ngIf="focus">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+</div>

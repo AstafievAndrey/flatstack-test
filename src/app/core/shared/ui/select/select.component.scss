@@ -1,0 +1,63 @@
+@import '../../../../../styles.scss';
+
+.select {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.search-input {
+    font-size: 16px;
+    flex: 1 1 auto;
+    outline: none;
+    border: 1px solid $grey;
+    border-width: 1px 0px 1px 1px;
+    padding: 5px;
+    border-radius: $border-radius 0px 0px $border-radius;
+}
+
+.search-input:focus {
+    border-radius: $border-radius 0px 0px;
+    border-bottom: none; 
+}
+
+.search-input:focus + .arrow{
+    border-radius:  0px $border-radius 0px;
+    border-bottom: none; 
+}
+
+.arrow {
+    cursor: pointer;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $grey;
+    border-width: 1px 1px 1px 0px;
+    border-radius:  0px $border-radius $border-radius 0px;
+}
+
+.arrow  i{
+    width: 10px;
+    height: 10px;
+    border: 1px solid $grey;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow.up i {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.select-res-container {
+    flex-direction: column;
+    border: 1px solid $grey;
+    border-top: none;
+}
+
+.select-res-container>div {
+    cursor: pointer;
+    padding: 5px 10px;
+}
